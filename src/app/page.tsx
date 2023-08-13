@@ -1,21 +1,10 @@
-import { getProjects } from '@/sanity/sanity-utils';
-import { Project } from '@/types/project';
-import Link from 'next/link';
+import ListArticles from "./(articles)/ListArticles";
 
 export default async function Home() {
-  const projects: Project[] = await getProjects()
 
   return (
-    <div className="">
-      {
-        projects.map((project: Project) => (
-          <Link href={`${project.slug}`} key={project._id}>
-            <div className="">
-            <h1>{project.name}</h1>
-          </div>
-          </Link>
-      ))
-      }
-    </div>
+    <main className="flex min-h-screen flex-col items-center p-4 lg:p-12">
+      <ListArticles/>
+    </main>
   )
 }

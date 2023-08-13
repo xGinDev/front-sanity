@@ -1,6 +1,8 @@
+import Menu from '@/components/header/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Header from '@/components/menu/Menu'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <body className={`${inter.className} overflow-hidden`}>
+      <div className="grid lg:grid-cols-[20%_80%] h-screen">
+        <div className=""><Menu/></div>
+        <div className="overflow-auto">
+          <Header/>
+          {children}
+        </div>
+      </div>
+    </body>
+  </html>
   )
 }
