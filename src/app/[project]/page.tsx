@@ -8,6 +8,6 @@ export default async function Project({params}: Props){
     const slug = params.project
 
     const project = await getProject(slug)
-
+  
     return <div className="">{project.name}</div>
 }

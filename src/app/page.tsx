@@ -7,7 +7,6 @@ export default async function Home() {
 
   return (
     <div className="">
-      <h1>Mi blog</h1>
       {
         projects.map((project: Project) => (
           <Link href={`${project.slug}`} key={project._id}>

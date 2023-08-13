@@ -4,7 +4,7 @@ import { createClient, groq } from "next-sanity"
 export async function getProjects() {
     const client = createClient(
         {
-            projectId: "g25vbstf",
+            projectId: "of9c98lx",
             dataset: "production",
             apiVersion: "2023-03-04"
         }
@@ -24,7 +24,7 @@ export async function getProjects() {
 export async function getProject(slug: string) {
     const client = createClient(
         {
-            projectId: "g25vbstf",
+            projectId: "of9c98lx",
             dataset: "production",
             apiVersion: "2023-03-04"
         }
