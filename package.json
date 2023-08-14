@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.4",
     "@sanity/client": "^6.4.5",
     "@types/node": "20.4.10",
     "@types/react": "18.2.20",
