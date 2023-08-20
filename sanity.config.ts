@@ -6,10 +6,10 @@ const config = defineConfig({
   projectId: "of9c98lx",
   dataset: "production",
   title: "Blog",
-  apiVersion: "2023-03-04",
+  apiVersion: "2023-08-20",
   basePath: "/admin",
   plugins: [deskTool()],
-  useCdn: true,
+  useCdn: false,
   schema: {types: schemas}
 })
 

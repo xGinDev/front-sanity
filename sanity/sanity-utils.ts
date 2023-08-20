@@ -7,8 +7,8 @@ export async function getProjects(): Promise <Project[]> {
         {
             projectId: "of9c98lx",
             dataset: "production",
-            apiVersion: "2023-03-04",
-            useCdn: true
+            apiVersion: "2023-08-20",
+            useCdn: false
         }
     )
 
@@ -29,8 +29,8 @@ export async function getProject(slug: string): Promise <Project> {
         {
             projectId: "of9c98lx",
             dataset: "production",
-            apiVersion: "2023-03-04",            
-            useCdn: true
+            apiVersion: "2023-08-20",            
+            useCdn: false
         }
     )
 
